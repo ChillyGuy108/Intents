@@ -21,7 +21,7 @@ class IntentActivity : AppCompatActivity() {
         setContentView(R.layout.activity_intent)
 
         val receivedText = intent.getStringExtra("text")
-        findViewById<TextView>(R.id.textView).text = receivedText
+        findViewById<TextView>(R.id.textView).text = "$receivedText (Intent)"
         findViewById<ImageButton>(R.id.btnBack).setOnClickListener {
             finish()
         }
